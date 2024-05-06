@@ -1,0 +1,14 @@
+﻿@page "/text-box"
+@using RazorComponents.Web.Common
+
+<h3>TextBoxControl</h3>
+
+<h3>Name - @Student.Name</h3>
+
+<TextBox DataMember="NameDataMember" IsNeedToUpdateState="true" CallbackStateChanged="StateHasChanged"/>
+
+@code {
+    StudentDTO Student { get; } = new();
+
+    DataMember NameDataMember => Student.GetDataMember(nameof(StudentDTO.Name));
+}

@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="WebControl\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 

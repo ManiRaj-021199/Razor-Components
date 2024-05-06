@@ -10,4 +10,8 @@
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RazorComponents.Components\RazorComponents.Components.csproj" />
+  </ItemGroup>
+
 </Project>

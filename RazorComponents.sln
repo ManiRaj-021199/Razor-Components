@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorComponents.Components", "RazorComponents.Components\RazorComponents.Components.csproj", "{13FE6C1E-082A-44B4-8F7D-DA2F0EA7BA24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorComponents.Components", "RazorComponents.Components\RazorComponents.Components.csproj", "{13FE6C1E-082A-44B4-8F7D-DA2F0EA7BA24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorComponents.Web", "RazorComponents.Web\RazorComponents.Web.csproj", "{12E58B8D-4D55-4D9E-B565-0BB4A9E28320}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorComponents.Web", "RazorComponents.Web\RazorComponents.Web.csproj", "{12E58B8D-4D55-4D9E-B565-0BB4A9E28320}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
