@@ -5,7 +5,7 @@
 
 <h3>Name - @Student.Name</h3>
 
-<TextBox DataMember="NameDataMember" IsNeedToUpdateState="true" CallbackStateChanged="StateHasChanged"/>
+<TextBox DataMember="NameDataMember" CallbackStateChanged="StateHasChanged" />
 
 @code {
     StudentDTO Student { get; } = new();

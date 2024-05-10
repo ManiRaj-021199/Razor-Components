@@ -1,7 +1,7 @@
 ﻿@namespace RazorComponents.Components
 @inherits ControlBase
 
-@if(IsVisible)
+@(IsVisible)
 {
-    <input @onchange="OnUserChanged" />
+<input @oninput="@(OnUserInput)" @onchange="OnUserChange" />
 }

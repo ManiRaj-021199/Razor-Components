@@ -4,15 +4,22 @@ namespace RazorComponents.Components;
 
 public partial class TextBox : ControlBase
 {
-    #region Publics
-    public async Task OnUserChanged(ChangeEventArgs e)
+    #region Privates
+    private async Task OnUserChange(ChangeEventArgs args)
     {
-        this.DataMember.SetMemberValue(e.Value?.ToString() ?? string.Empty);
+        await HandleEvents(args);
+    }
 
-        if(this.IsNeedToUpdateState)
-        {
-            await this.CallbackStateChanged.InvokeAsync();
-        }
+    private async Task OnUserInput(ChangeEventArgs args)
+    {
+        await HandleEvents(args);
+    }
+
+    private async Task HandleEvents(ChangeEventArgs args)
+    {
+        this.DataMember.SetMemberValue(args.Value?.ToString() ?? string.Empty);
+
+        await UpdateState();
     }
     #endregion
 }
